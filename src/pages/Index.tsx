@@ -5,19 +5,23 @@ import Projects from "@/components/Projects";
 import Resume from "@/components/Resume";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import ScrollProgress from "@/components/ScrollProgress";
 
 const Index = () => {
   useLocomotiveScroll();
 
   return (
-    <div data-scroll-container>
-      <Hero />
-      <About />
-      <Projects />
-      <Resume />
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      <ScrollProgress />
+      <div data-scroll-container>
+        <Hero />
+        <About />
+        <Projects />
+        <Resume />
+        <Contact />
+        <Footer />
+      </div>
+    </>
   );
 };
 

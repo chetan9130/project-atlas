@@ -1,10 +1,14 @@
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "./ui/button";
 import profileImage from "@/assets/profile.jpg";
+import ThreeBackground from "./ThreeBackground";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden" data-scroll-section>
+      {/* 3D Background */}
+      <ThreeBackground />
+      
       {/* Animated Background */}
       <div className="absolute inset-0 tech-grid opacity-20" />
       <div className="absolute inset-0 bg-gradient-to-br from-tech-cyan/10 via-transparent to-tech-purple/10" />
@@ -31,26 +35,26 @@ const Hero = () => {
 
           {/* Name with glitch effect */}
           <div className="space-y-4">
-            <h1 className="text-6xl md:text-8xl font-bold tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold tracking-tight">
               <span className="gradient-text">Your Name</span>
             </h1>
-            <div className="flex items-center justify-center gap-2 text-xl md:text-2xl text-muted-foreground">
+            <div className="flex items-center justify-center gap-2 text-lg sm:text-xl md:text-2xl text-muted-foreground">
               <span className="inline-block w-2 h-2 bg-tech-cyan rounded-full animate-pulse" />
               <span className="glow-text">Full Stack Developer</span>
             </div>
           </div>
 
           {/* Description */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed px-4">
             Crafting digital experiences with cutting-edge technologies. 
             Specializing in building exceptional web applications that make a difference.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4 px-4">
             <Button 
               size="lg" 
-              className="group bg-tech-cyan text-background hover:bg-tech-cyan/90 glow-border"
+              className="group bg-tech-cyan text-background hover:bg-tech-cyan/90 glow-border w-full sm:w-auto"
             >
               View Projects
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -58,7 +62,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-tech-purple text-tech-purple hover:bg-tech-purple/10"
+              className="border-tech-purple text-tech-purple hover:bg-tech-purple/10 w-full sm:w-auto"
             >
               Get In Touch
             </Button>

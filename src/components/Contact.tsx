@@ -11,12 +11,12 @@ const Contact = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16" data-scroll data-scroll-speed="1">
-            <h2 className="text-5xl md:text-6xl font-bold mb-4">
+          <div className="text-center mb-16 px-4" data-scroll data-scroll-speed="1">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
               <span className="gradient-text">Get In Touch</span>
             </h2>
             <div className="w-20 h-1 bg-tech-cyan mx-auto mb-6" />
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
               Have a project in mind? Let's work together to create something amazing.
             </p>
           </div>
