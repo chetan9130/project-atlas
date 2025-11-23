@@ -1,5 +1,6 @@
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "./ui/button";
+import profileImage from "@/assets/profile.jpg";
 
 const Hero = () => {
   return (
@@ -14,6 +15,20 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 relative z-10" data-scroll data-scroll-speed="2">
         <div className="max-w-4xl mx-auto text-center space-y-8">
+          {/* Profile Image */}
+          <div className="flex justify-center mb-8">
+            <div className="relative group">
+              <div className="absolute inset-0 bg-gradient-to-r from-tech-cyan via-tech-purple to-tech-pink rounded-full blur-xl opacity-75 group-hover:opacity-100 transition-opacity animate-pulse-glow" />
+              <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-tech-cyan/50 hover:border-tech-cyan transition-colors">
+                <img 
+                  src={profileImage} 
+                  alt="Profile" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
           {/* Name with glitch effect */}
           <div className="space-y-4">
             <h1 className="text-6xl md:text-8xl font-bold tracking-tight">
