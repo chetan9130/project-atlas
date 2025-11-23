@@ -45,14 +45,14 @@ const Resume = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16" data-scroll data-scroll-speed="1">
-            <h2 className="text-5xl md:text-6xl font-bold mb-4">
+          <div className="text-center mb-16 px-4" data-scroll data-scroll-speed="1">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
               <span className="gradient-text">Resume</span>
             </h2>
             <div className="w-20 h-1 bg-tech-cyan mx-auto mb-6" />
             <Button 
               size="lg" 
-              className="bg-tech-cyan text-background hover:bg-tech-cyan/90 glow-border group"
+              className="bg-tech-cyan text-background hover:bg-tech-cyan/90 glow-border group w-full sm:w-auto"
             >
               <Download className="mr-2 w-5 h-5" />
               Download Resume
